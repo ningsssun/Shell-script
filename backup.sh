@@ -61,3 +61,10 @@ do
   fi
 done
 
+# [TASK 12]
+# Archive and compress the files in the toBackup array
+tar -czf "$backupFileName" "${toBackup[@]}"
+
+# [TASK 13]
+# Move the created archive file to the destination directory
+mv "$backupFileName" "$destAbsPath"
